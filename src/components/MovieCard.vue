@@ -16,9 +16,12 @@
     >
       <img :src="movie.image_url" alt="" class="w-full h-[300px] rounded-lg" />
       <div class="flex justify-between my-3 mx-3 gap-2">
-        <v-btn size="small" color="white" class="rounded-lg text-black"
-          >Lecture</v-btn
-        >
+        <RouterLink :to="'/broadcast/' + movie.name">
+          <v-btn size="small" color="white" class="rounded-lg text-black"
+            >Lecture</v-btn
+          >
+        </RouterLink>
+
         <v-btn
           size="small"
           color="grey"

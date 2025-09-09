@@ -8,7 +8,6 @@
 
 <script setup lang="ts">
 import type { MovieType } from "@/typescript/Movie";
-import data from "../data/Movies.json";
 import MovieCard from "./MovieCard.vue";
 
 const props = defineProps<{ movies: MovieType[] }>();
